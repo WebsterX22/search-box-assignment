@@ -41,13 +41,13 @@ function App() {
         </svg>
       </label>
       {
-        <div className={suggestion == null ? "hidden" : "flex-col max-h-60 overflow-auto absolute top-16 w-11/12 left-4 md:left-8 z-10 lg:left-16 rounded-lg bg-slate-100 block "}>
+        <div className={suggestion == null ? "hidden" : "flex-col max-h-60 overflow-auto absolute top-16 w-11/12 left-4 md:left-8 z-10 lg:left-16 rounded-lg bg-slate-200 block "}>
         {
           suggestion?.map((item)=>{
             return(
-                  <div className="flex items-center justify-between w-full px-2 border overflow-auto bg-inherit hover:bg-slate-200 transition-all ease-in-out duration-700 cursor-pointer">
+                  <div className="flex items-center justify-between w-full px-2 border overflow-auto bg-inherit hover:bg-slate-300 transition-all ease-in-out duration-700 cursor-pointer">
                     <img width={50} src={item.thumbnail} alt="" />
-                    <p className="text-ellipsis ">{item.title}</p>
+                    <p className="text-ellipsis text-black ">{item.title}</p>
                   </div>
                 )
               })
